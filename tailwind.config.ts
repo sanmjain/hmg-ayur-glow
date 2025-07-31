@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'heading': ['Marcellus SC', 'serif'],
+				'body': ['Montserrat', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,7 +65,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Ayurvedic custom colors
+				'herb-green': 'hsl(var(--herb-green))',
+				'herb-green-light': 'hsl(var(--herb-green-light))',
+				'turmeric': 'hsl(var(--turmeric))',
+				'turmeric-light': 'hsl(var(--turmeric-light))',
+				'sandalwood': 'hsl(var(--sandalwood))',
+				'earth-brown': 'hsl(var(--earth-brown))',
+				'warm-cream': 'hsl(var(--warm-cream))',
+				'success': {
+					DEFAULT: 'hsl(var(--success))',
+					foreground: 'hsl(var(--success-foreground))'
+				},
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-earth': 'var(--gradient-earth)',
+			},
+			boxShadow: {
+				'natural': 'var(--shadow-natural)',
+				'warm': 'var(--shadow-warm)',
+				'deep': 'var(--shadow-deep)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
