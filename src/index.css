@@ -26,7 +26,7 @@
 
     /* Muted earth tones */
     --muted: 45 20% 90%;
-    --muted-foreground: 30 10% 45%;
+    --muted-foreground: 30 15% 35%;
 
     /* Accent - Golden turmeric */
     --accent: 45 95% 55%;
@@ -56,6 +56,8 @@
     --gradient-hero: linear-gradient(135deg, hsl(var(--herb-green)), hsl(var(--success)));
     --gradient-accent: linear-gradient(135deg, hsl(var(--turmeric)), hsl(45 85% 65%));
     --gradient-earth: linear-gradient(180deg, hsl(var(--background)), hsl(var(--sandalwood)));
+    --gradient-hero-bg: radial-gradient(ellipse at center, hsl(120 30% 85% / 0.4) 0%, hsl(120 20% 92% / 0.2) 50%, hsl(var(--background)) 100%);
+    --gradient-hero-overlay: linear-gradient(135deg, hsl(120 25% 90% / 0.8) 0%, hsl(var(--background)) 60%);
 
     /* Shadows with natural warmth */
     --shadow-natural: 0 4px 12px hsl(var(--herb-green) / 0.1);

@@ -83,6 +83,8 @@ export default {
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-accent': 'var(--gradient-accent)',
 				'gradient-earth': 'var(--gradient-earth)',
+				'gradient-hero-bg': 'var(--gradient-hero-bg)',
+				'gradient-hero-overlay': 'var(--gradient-hero-overlay)',
 			},
 			boxShadow: {
 				'natural': 'var(--shadow-natural)',
