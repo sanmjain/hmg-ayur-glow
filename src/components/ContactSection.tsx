@@ -37,36 +37,36 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 bg-background">
+    <section className="py-8 sm:py-12 lg:py-16 px-4 bg-background">
       <div className="container mx-auto">
-        <div className="text-center mb-12 animate-in fade-in-50 duration-700">
-          <h2 className="font-heading text-3xl lg:text-4xl text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12 animate-in fade-in-50 duration-700">
+          <h2 className="font-heading text-2xl sm:text-3xl lg:text-4xl text-foreground mb-2 sm:mb-4 font-bold">
             Get in <span className="text-herb-green">Touch</span>
           </h2>
-          <p className="text-muted-foreground font-body text-lg">
+          <p className="text-muted-foreground font-body text-sm sm:text-base lg:text-lg font-medium">
             We're happy to answer any questions or take your order.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <Card className="bg-card shadow-natural border-0 animate-in slide-in-from-left duration-700">
-            <CardContent className="p-8">
-              <form onSubmit={handleSubmit} className="space-y-6">
+          <Card className="bg-card shadow-natural border-herb-green/10 border animate-in slide-in-from-left duration-700">
+            <CardContent className="p-4 sm:p-6 lg:p-8">
+              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name" className="font-body font-medium">Name *</Label>
+                  <Label htmlFor="name" className="font-body font-medium text-sm sm:text-base">Name *</Label>
                   <Input
                     id="name"
                     name="name"
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="font-body"
+                    className="font-body text-sm sm:text-base"
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="email" className="font-body font-medium">Email *</Label>
+                  <Label htmlFor="email" className="font-body font-medium text-sm sm:text-base">Email *</Label>
                   <Input
                     id="email"
                     name="email"
@@ -74,25 +74,25 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="font-body"
+                    className="font-body text-sm sm:text-base"
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="font-body font-medium">Message *</Label>
+                  <Label htmlFor="message" className="font-body font-medium text-sm sm:text-base">Message *</Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
                     required
-                    rows={5}
-                    className="font-body"
+                    rows={4}
+                    className="font-body text-sm sm:text-base"
                   />
                 </div>
                 
-                <Button type="submit" variant="ayurvedic" size="lg" className="w-full font-body font-semibold">
-                  <Send className="w-5 h-5" />
+                <Button type="submit" variant="ayurvedic" size="lg" className="w-full font-body font-bold text-sm sm:text-base">
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5" />
                   Send Message
                 </Button>
               </form>

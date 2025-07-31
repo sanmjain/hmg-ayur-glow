@@ -23,7 +23,7 @@ const buttonVariants = cva(
         whatsapp: "bg-green-600 text-white hover:bg-green-700 hover:scale-105 shadow-natural",
         turmeric: "bg-gradient-accent text-earth-brown hover:scale-105 shadow-warm font-medium",
         herbal: "bg-herb-green text-primary-foreground hover:bg-herb-green/90 shadow-natural hover:shadow-warm",
-        floating: "fixed bottom-6 right-6 z-50 rounded-full w-14 h-14 bg-green-600 text-white hover:bg-green-700 hover:scale-110 shadow-lg hover:shadow-xl transition-all duration-300",
+        floating: "fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 rounded-full w-12 h-12 sm:w-14 sm:h-14 bg-green-600 text-white hover:bg-green-700 hover:scale-110 shadow-lg hover:shadow-xl transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
